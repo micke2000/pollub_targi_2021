@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+header{
+    position:fixed;
+    height: 110vh;
+    width: 100vw;
+    background-color:#dc7011;
+    background-size: cover;
+    z-index: 0;
+
+}
+header div.biale{
+    padding-top: 2vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2vw;
+    width: 100vw;
+    height: 90%;
+    background-color: white;
+    box-shadow: 0 0.5rem 0.7em 0.1rem #9c4f0c;
+    font-family: 'Raleway', sans-serif;
+    color: #dc7011;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+header div.biale div.text{
+    flex-basis: 60%;
+}
+header div.biale h1{
+    text-align: center;
+    font-size: 12vh;
+    animation: scaley 0.8s;
+    position: relative;
+    z-index: 2;
+    /* text-shadow: 5px -5px 0 #4d6688; */
+}
+header div.biale h1::before{
+    font-size: 12vh;
+    position: absolute;
+    top: -6%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.7;
+    width: 100%;
+    color: #193256;
+}
+header div.biale h1:nth-child(1):before{
+    display: inline;
+    content: "XXI";
+    text-align: center;
+}
+header div.biale h1:nth-child(2):before{
+    display: inline;
+    content: "TARGI PRACY";
+    text-align: center;
+}
+header div.biale h2.targi{
+    margin-top: 3%;
+    font-size: 6vh;
+    color: #193256; 
+    text-transform: uppercase;
+    font-weight: 600;
+    animation: fadein 1s;
+    text-align: center;
+}
+header div.biale h3{
+    font-size: 5vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #193256; 
+    animation: fadein 1s;
+}
+header div.img{
+    flex-basis: 30%;
+    width: 100vw;
+    max-width: 360px;
+    align-self: flex-start;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    background-image: url(./img/tp_ludek.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 55vh;
+    transition: 0.3s ease-in-out;
+    animation: fadein 1.2s;
+    align-self: center;
+}
+section.main{
+    background-color: #dc7011;
+    height: 327vh;
+    width: 100vw;
+    top: 105vh;
+    position: relative;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+section.main section.about{
+    padding-top: 5%;
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+section.main section.about h1{
+    text-align: center;
+    width: 90%;
+    font-size: 4vh;
+    font-weight: 600;
+    margin-bottom: 5%;
+    z-index: 1;
+}
+section.main section.about h1.tlo{
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    opacity: 0.12;
+    text-align: left;
+    font-size: 55vh;
+    /* line-height: 100%; */
+    font-weight: 900;
+}
+section.main section.about a{
+    /* width: 100%; */
+    margin-top: 2vh;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+    font-size: 3vh;
+    color: white;
+}section.main section.about a p.linki{
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+    transition: 0.3s ease-in-out;
+}
+section.main section.about a p.linki:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+section.main section.about p{
+    width: 90%;
+    max-width: 1000px;
+}
+section.main section.about p.opis{
+    font-size: 3vh;
+    width: 85%;
+    margin-bottom: 4vh;
+    z-index: 1;
+}
+section.main section.about p.czas{
+    font-size: 3vh;
+    margin-bottom: 2.5vh;
+    z-index: 1;
+}
+section.main section.about p.miejsce{
+    font-size: 3vh;
+    margin-bottom: 2.5vh;
+    z-index: 1;
+}
+section.main section.about p.dlakogo{
+    font-size: 3vh;
+    z-index: 1;
+    margin-bottom: 5vh;
+}
+section.main section.about p.przyjdz{
+    font-size: 3.5vh;
+    font-weight: 600;
+    z-index: 1;
+}
+section.main section.footer{
+    padding-top: 2%;
+    width: 100vw;
+    height: 190vh;
+    background-color: white;
+    color:#dc7011;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+section.main section.footer h2{
+    font-size: 5.5vh;
+    /* flex-basis: 100%; */
+    margin-bottom: 3%;
+}
+section.main section.footer h1.tlo{
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-75%);
+    z-index: 0;
+    opacity: 0.15;
+    text-align: left;
+    font-size: 45vh;
+    font-weight: 900;
+}
+section.main section.footer div.sponsorzy{
+    position: relative;
+    z-index: 1;
+    width: 70%;
+    flex-basis: 110vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+section.main section.footer div.sponsorzy a{
+    background-image: url("img/noyen.png");
+    margin-right: 2%;
+    flex-basis: 7%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0 0.5rem 0.7em 0.2rem #d4d4d4;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+section.main section.footer div.sponsorzy a:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+section.main section.footer p.desc{
+    align-self: center;
+    position: absolute;
+    top:101%;
+    color: #193256;
+    font-size: 2vh;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    animation: fadeout 0.25s;
+}
+section.main section.footer p.desc.on{
+    opacity: 1;
+    animation: fadin 0.25s;
+}
+section.main section.footer div.linki{
+    position: relative;
+    flex-basis: 40vh;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    justify-content: space-evenly;
+    background-color: rgba(	220, 112, 17,0.12);
+    
+}
+section.main section.footer div.linki div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+}
+section.main section.footer div.linki div a{
+    text-decoration: none;
+    color: #193256; 
+    font-size: 2vh;
+}
+section.main section.footer div.linki div p{
+    font-weight: 600;
+    font-size: 2.2vh;
+}
+section.main section.footer div.linki div a:hover{
+    color: #2f5b97;
+}
+/* section.main section.footer div.sponsorzy a:hover div.img div.opis{
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #193256;
+    width: 20vw;
+    padding:10%;
+} */
+section.main section.footer div.linki a p.linki{
+    color: #dc7011;
+}
+section.main section.footer div.sponsorzy a:nth-child(16){
+    visibility: hidden;
+    height: 10%;
+    flex-basis: 10%;
+}
+section.main section.footer div.sponsorzy a:nth-child(17){
+    position: relative;
+}
+section.main section.footer div.sponsorzy a:nth-child(17)::after{
+    position: absolute;
+    width: 200%;
+    top:-50%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "SREBRNY WYSTAWCA";
+    color: #dc7011;
+    font-weight: 600;
+    font-size: 2vh;
+
+}
+section.main section.footer div.sponsorzy a div.img div.opis{
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    z-index: -1;
+}
+section.main div.org{
+    position: relative;
+    background-color: white;
+    height: 7vh;
+    color: #2f5b97;
+    box-shadow: 0 -0.1rem 0.7em 0.2rem rgb(219, 219, 219);
+    z-index: 1;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+section.main div.org div.loga{
+    height: 100%;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+section.main div.org div.loga a {
+    position: relative;
+    height: 6vh;
+    width: 6vh;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section.main div.org div.loga a:nth-child(1){
+    background-image: url(img/logo_pl.png);
+}
+section.main div.org div.loga a:nth-child(2){
+    background-image: url(img/logo_Weii.png);
+}
+section.main div.org div.loga a:nth-child(3){
+    background-image: url(img/logo_mech.png);
+}
+section.main div.org div.loga a:nth-child(4){
+    background-image: url(img/logo_bk.png);
+}
+section.main div.org p{
+    font-size: 2.5vh;
+    text-align: left;
+    line-height: 7vh;
+}
+@keyframes fadein {
+    0% { opacity: 0; }
+    100%   { opacity: 1; }
+}
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100%   { opacity: 0; }
+}
+@keyframes scaley {
+    0% { transform:scaleY(0) }
+    100%   { transform:scaleY(1) }
+}
+@media(min-width:768px){
+    section.main{
+        height: 247vh;
+    }
+    section.main section.about{
+        height: 110vh;
+    }
+    section.main section.footer h2{
+        flex-basis: 100%;
+    }
+    section.main section.footer{
+        width: 100vw;
+        height: 130vh;
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    section.main section.footer div.sponsorzy{
+        position: relative;
+        z-index: 1;
+        width: 80%;
+        max-width: 1100px;
+        flex-basis: 60vh;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    section.main section.footer div.sponsorzy a:nth-child(16){
+        flex-basis: 100%;
+    }
+    section.main section.footer div.sponsorzy a:nth-child(17)::after{
+        top:-30%;
+        left: 50%;
+        content: "SREBRNY WYSTAWCA";
+        color: #dc7011;
+    
+    }
+    section.main section.footer div.sponsorzy a{
+        flex-basis: 16%;
+        height: 6vw;
+    }
+}
+@media(min-width:1200px){
+    header{
+        height: 70vh;
+    }
+    header div.biale{
+        flex-direction: row;
+        font-size: 10vh;
+        width: 100vw;
+        box-shadow: 0 0.5rem 0.3em 0.1rem #9c4f0c;
+    }
+    section.main{
+        top: 67vh;
+    }
+    header div.biale h1::before{
+        top: -8%;
+        left: 1%;
+        font-size: 12vh;
+    }
+    header div.img{
+        align-self: center;
+    }
+    header div.biale h1{
+        text-align: left;
+        font-size: 12vh;
+    }
+    header div.biale h1:nth-child(1):before{
+        text-align: left;
+    }
+    header div.biale h1:nth-child(2):before{
+        text-align: left;
+    }
+    header div.biale h2.targi{
+        text-align: left;
+    }
+    header div.biale h3{
+        text-align: left;
+    }
+    section.main section.footer div.sponsorzy{
+        flex-basis: 65vh;
+    }
+    section.main section.footer div.sponsorzy a{
+        flex-basis: 12%;
+    }
+}
